@@ -1,4 +1,4 @@
 ﻿# Build-Day
 
 
-access at -> https://rawcdn.githack.com/Swarit-Parida/Build-Day/e7c9d5c9c6ad2260d1854a4f451f2c446c8fc5b5/index.html
+access at -> https://build-day.vercel.app/
