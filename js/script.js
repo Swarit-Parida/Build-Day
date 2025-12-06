@@ -20,6 +20,7 @@
   const baseAudio = {};
   Object.entries(SOUND_MAP).forEach(([id, path]) => {
     const a = new Audio(path);
+    a.crossOrigin = "anonymous";
     a.preload = 'auto';
     a.loop = false;
     a.volume = Number(volumeSlider.value);
