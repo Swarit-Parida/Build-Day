@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PokePad — Soundboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="app" data-theme="neon">
+    <header class="topbar">
+      <h1 class="logo">PokePad</h1>
+
+      <div class="controls">
+        <label class="theme-switch">
+          <input id="themeToggle" type="checkbox" />
+          <span class="switch-label">Arena Theme</span>
+        </label>
+
+        <label class="vol">
+          <input id="volume" type="range" min="0" max="1" step="0.01" value="0.8" />
+        </label>
+
+        <button id="muteBtn" class="btn icon-btn" aria-pressed="false" title="Mute (M)">🔈</button>
+      </div>
+    </header>
+
+    <section class="grid" id="buttons">   
+      <button class="sound-btn" data-key="1" data-sound="voicy-ben10-intro">
+        <img class="icon" src="icons/ben10.png" alt="Ben10 icon" />
+        <div class="label">Ben 10 Intro <span class="kbd">1</span></div>
+        <canvas class="vis" width="300" height="40"></canvas>
+      </button>
+
+      <button class="sound-btn" data-key="2" data-sound="voicy-humungousaur">
+        <img class="icon" src="icons/humungousaur.png" alt="Humungousaur icon" />
+        <div class="label">Humungousaur <span class="kbd">2</span></div>
+        <canvas class="vis" width="300" height="40"></canvas>
+      </button>
+
+      <button class="sound-btn" data-key="3" data-sound="voicy-pikachu">
+        <img class="icon" src="icons/pikachu.png" alt="Pikachu icon" />
+        <div class="label">Pikachu <span class="kbd">3</span></div>
+        <canvas class="vis" width="300" height="40"></canvas>
+      </button>
+
+      <button class="sound-btn" data-key="4" data-sound="voicy-squirtle">
+        <img class="icon" src="icons/squirtle.png" alt="Squirtle icon" />
+        <div class="label">Squirtle <span class="kbd">4</span></div>
+        <canvas class="vis" width="300" height="40"></canvas>
+      </button>
+
+      <button class="sound-btn" data-key="5" data-sound="voicy-swamp-fire">
+        <img class="icon" src="icons/swampfire.png" alt="Swamp Fire icon" />
+        <div class="label">Swamp Fire <span class="kbd">5</span></div>
+        <canvas class="vis" width="300" height="40"></canvas>
+      </button>
+
+      <button class="sound-btn" data-key="6" data-sound="dinamaxxx">
+        <img class="icon" src="icons/charizard.png" alt="Charizard icon" />
+        <div class="label">Dynamax <span class="kbd">6</span></div>
+        <canvas class="vis" width="300" height="40"></canvas>
+      </button>
+    </section>
+
+    <footer class="foot">
+      <p class="tip">Tip: Click tiles or press <strong>1–6</strong>. Press <strong>M</strong> to mute. Toggle themes for a different arena vibe.</p>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
